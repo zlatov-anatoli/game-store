@@ -1,0 +1,27 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 30px;
+  margin-bottom: 150px;
+}
+
+@media (max-width: 1227px) {
+  .content {
+    margin: 10px;
+    gap: 25px 20px;
+  }
+}
+@media (max-width: 1107px) {
+  .content {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 720px) {
+  .content {
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,130 @@
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.wrapper {
+  margin-top: 60px;
+  text-decoration: none;
+  color: white;
+  width: 340px;
+  height: 300px;
+  background-color: rgb(36, 37, 41);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #5558ed;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.image {
+  height: 170px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.text {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-weight: 600;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 15px;
+  color: white;
+  background-color: #5558ed;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 3px #999;
+  transition: all 0.1s;
+}
+.button:hover {
+  background-color: #393cea;
+}
+.button:active {
+  background-color: #393cea;
+  box-shadow: 0 4px #4b4a4a;
+  transform: translateY(4px);
+}
+
+.description {
+  display: block;
+  color: rgba(245, 245, 245, 0.731);
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 100rem;
+  margin: 30px auto;
+  line-height: 1.7;
+}
+.price {
+  font-weight: 600;
+  position: absolute;
+  bottom: 60px;
+  left: 50px;
+}
+.icon {
+  margin-right: 5px;
+}
+.count {
+  border: 1px solid black;
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 2px;
+  background-color: white;
+  border-radius: 40%;
+  color: black;
+}
+
+@media (max-width: 1030px) {
+  .block {
+    margin: 15px;
+  }
+  .video {
+    width: 550px;
+  }
+  .description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 966px) {
+  .block {
+    display: block;
+  }
+  .text {
+    text-align: center;
+  }
+  .wrapper {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 557px) {
+  .video {
+    width: 350px;
+    height: 200px;
+  }
+}
